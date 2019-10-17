@@ -1,0 +1,5 @@
+ apt-get remove - remove o programa, porém mantém os arquivos de configuração
+ 
+ apt-get purge - remove o programa e os arquivos de configuraçao 
+ 
+ apt-get autoremove - remove arquivos nao usados do servidor
