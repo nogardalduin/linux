@@ -1,0 +1,35 @@
+#Instalar Apache2
+	apt-get install apache2
+	apt install apache2
+
+#COPIAR ARQUIVO DE CONFIGURAÇAO PADRAO
+	cd etc/apache2/sites-available/
+	cp 000-default.conf (nome do meu site).conf
+
+#EDITAR O ARQUIVO (nome do meu site).conf 
+	vim (nome do meu site).conf
+
+#EDITAR OS SEGUINTES PARAMETROS
+	servername - nome do meu site
+	serveradmin - webmaster@(nome do meu site) - e-mail 
+	documentroot /var/www/(nome do meu site)/html - caminho para seu site 
+
+#HABILITAR O SITE
+	a2ensite (nome do meu site)
+
+#DAR O RELOAD NO SERVIÇO DO APACHE2
+	systemctl reload apache2
+
+#CRIAR A PASTA DO SEU SITE
+	mkdir -p /var/www/(nome do meu site)/html/
+
+#CRIAR O INDEX>HTML/
+	vim /var/www/(nome do meu site)/html/index.html
+
+#ACESSAR A MAQUINA WINDOWS 10 E EDITAR O ARQUIVO HOST
+	C:\windows\system32\drivers\etc\hosts
+
+COLOCAR O SITE DA SEGUINTE FORMA
+	IP DO SITE	(nome do meu site)
+
+#acessar o (nome do site) via um navegar de internet
