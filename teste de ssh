@@ -1,0 +1,2 @@
+teste de SSH
+ssh -l (usuario)=GRUPO 5
